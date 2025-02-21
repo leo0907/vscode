@@ -25,6 +25,11 @@ import { IConfigurationService } from '../../../../../../platform/configuration/
 import { IMarkerData, IMarkerService, MarkerSeverity } from '../../../../../../platform/markers/common/markers.js';
 
 /**
+ * TODO: @legomushroom - list
+ *  - improve error messages
+ */
+
+/**
  * TODO: @legomushroom
  */
 const MARKERS_OWNER_ID = 'reusable-prompts-syntax';
@@ -36,8 +41,8 @@ class PromptLinkDiagnosticsProvider extends ObservableDisposable {
 	/**
 	 * TODO: @legomushroom
 	 */
-
 	private readonly parser: TextModelPromptParser;
+
 	constructor(
 		private readonly editor: ITextModel,
 		@IMarkerService private readonly markerService: IMarkerService,
